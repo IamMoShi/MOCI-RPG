@@ -1,2 +1,4 @@
-package main.java.RPG.Stuff.Armor;public class Armor {
+package main.java.RPG.Stuff.Armor;
+
+public class Armor {
 }

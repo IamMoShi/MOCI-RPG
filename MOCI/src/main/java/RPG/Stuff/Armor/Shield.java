@@ -1,2 +1,4 @@
-package main.java.RPG.Stuff.Armor;public class Shield {
+package main.java.RPG.Stuff.Armor;
+
+public class Shield {
 }
