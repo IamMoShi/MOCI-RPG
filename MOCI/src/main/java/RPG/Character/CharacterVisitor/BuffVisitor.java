@@ -6,19 +6,19 @@ import main.java.RPG.Character.Wizard;
 
 public class BuffVisitor implements CharacterVisitor {
 
-
     @Override
-    public void visit(Healer healer) {
-        
+    public void visitHealer(Healer healer) {
+        healer.setWisdom(healer.getWisdom() + 1);
     }
 
     @Override
-    public void visit(Warrior warrior) {
-
+    public void visitWarrior(Warrior warrior) {
+        warrior.setStrength(warrior.getStrength() + 1);
     }
 
     @Override
-    public void visit(Wizard wizard) {
-
+    public void visitWizard(Wizard wizard) {
+        wizard.setIntelligence(wizard.getIntelligence() + 1);
     }
+
 }

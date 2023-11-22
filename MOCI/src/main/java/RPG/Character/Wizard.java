@@ -1,5 +1,7 @@
 package main.java.RPG.Character;
 
+import main.java.RPG.Character.CharacterVisitor.CharacterVisitor;
+
 public class Wizard extends GameCharacter {
 
     private int intelligence;
@@ -15,5 +17,9 @@ public class Wizard extends GameCharacter {
 
     public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
+    }
+
+    public void accept(CharacterVisitor visitor) {
+        visitor.visitWizard(this);
     }
 }

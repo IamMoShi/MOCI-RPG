@@ -1,5 +1,7 @@
 package main.java.RPG.Character;
 
+import main.java.RPG.Character.CharacterVisitor.CharacterVisitor;
+
 public class Warrior extends GameCharacter {
     private int strength;
 
@@ -15,5 +17,9 @@ public class Warrior extends GameCharacter {
 
     public void setStrength(int strength) {
         this.strength = strength;
+    }
+
+    public void accept(CharacterVisitor visitor) {
+        visitor.visitWarrior(this);
     }
 }

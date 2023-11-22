@@ -1,5 +1,7 @@
 package main.java.RPG.Character;
 
+import main.java.RPG.Character.CharacterVisitor.CharacterVisitor;
+
 public class Healer extends GameCharacter {
 
     private int wisdom;
@@ -15,5 +17,9 @@ public class Healer extends GameCharacter {
 
     public void setWisdom(int wisdom) {
         this.wisdom = wisdom;
+    }
+
+    public void alter(CharacterVisitor visitor) {
+        visitor.visitHealer(this);
     }
 }
