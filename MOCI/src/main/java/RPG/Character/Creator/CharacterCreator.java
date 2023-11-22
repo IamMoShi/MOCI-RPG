@@ -1,5 +1,6 @@
-package main.java.RPG.Character;
+package main.java.RPG.Character.Creator;
 
+import main.java.RPG.Character.GameCharacter;
 import main.java.RPG.GameConfiguration.GameDifficulty;
 
 public interface CharacterCreator {
